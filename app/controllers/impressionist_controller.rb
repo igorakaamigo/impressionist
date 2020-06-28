@@ -138,7 +138,7 @@ module ImpressionistController
       # str = request.session_options[:id]
       # logger.debug "Encoding: #{str.encoding.inspect}"
       # # request.session_options[:id].encode("ISO-8859-1")
-      request.session_options[:id]
+      request.session_options[:id].to_s
     end
 
     def params_hash
